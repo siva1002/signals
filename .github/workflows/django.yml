@@ -35,6 +35,4 @@ jobs:
         run: |
           git fetch
           git branch
-          git checkout master
-          git pull main
           git push master
