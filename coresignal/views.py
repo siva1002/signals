@@ -5,7 +5,7 @@ from django.http.response import HttpResponse
 
 def create_blog_post(request):
     # Your code to create a new blog post goes here
-    # ...
+    # ... new changes
 
     # After creating the blog post, send the signal
 
