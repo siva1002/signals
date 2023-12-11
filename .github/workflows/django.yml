@@ -33,4 +33,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Push to another branch
-        run: git push master
+        run: |
+         git remote add origin https://github.com/siva1002/signals.git
+         git checkout origin master
+         git pull origin main
+         git push origin master
