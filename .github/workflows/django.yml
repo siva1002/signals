@@ -28,3 +28,9 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
+  push-to-another-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Push to another branch
+        run: git push origin master
